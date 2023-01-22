@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="System\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="29.0.0" />
+    <PackageReference Include="GDAL" Version="3.5.3" />
+    <PackageReference Include="GDAL.Native" Version="3.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Data2\Web.Data2.csproj" />
+    <ProjectReference Include="..\Web.ViewModel2\Web.ViewModel2.csproj" />
+  </ItemGroup>
+
+</Project>
